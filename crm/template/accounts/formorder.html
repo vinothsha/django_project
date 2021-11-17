@@ -1,0 +1,10 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+{%block content%}
+<h5>create order</h5>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">submit</button>
+</form>
+{% endblock %}
